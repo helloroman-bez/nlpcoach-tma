@@ -148,7 +148,7 @@ function PaywallScreen({ user, onSuccess }) {
           {["💬 AI-коуч с НЛП техниками", "🧩 4 структурированных упражнения", "📓 Дневник инсайтов", "🔄 Неограниченные сессии"].map(f => (
             <div key={f} style={{ fontSize: 14, color: "#e2e8f0", padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.05)", textAlign: "left" }}>{f}</div>
           ))}
-          <div style={{ marginTop: 20, fontSize: 28, fontWeight: 800, color: "#f1f5f9" }}>100 ⭐️</div>
+          <div style={{ marginTop: 20, fontSize: 28, fontWeight: 800, color: "#f1f5f9" }}>1 ⭐️</div>
           <div style={{ fontSize: 13, color: "#64748b" }}>в месяц · Telegram Stars</div>
         </div>
 
