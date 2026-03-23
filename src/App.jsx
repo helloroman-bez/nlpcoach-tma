@@ -125,9 +125,12 @@ function PaywallScreen({ user, onSuccess }) {
   const tg = window.Telegram?.WebApp;
 
   function handleSubscribe() {
-    // Закрываем Mini App и отправляем пользователя к боту для оплаты
-    tg?.close();
-    // Бот при /subscribe отправит invoice
+    // Открываем бота и отправляем команду /subscribe
+    if (tg) {
+      tg.switchInlineQuery("/subscribe", ["users"]);
+    } else {
+      window.open("https://t.me/nlpcoachh_bot?start=subscribe", "_blank");
+    }
   }
 
   return (
